@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
@@ -17,6 +17,7 @@ export class FirstComponentComponent implements OnInit {
   }
 
   constructor() {}
+  
 
     ngOnInit(): void {
       //Called after the constructor, initializing input properties, and the first call to ngOnChanges.

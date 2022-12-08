@@ -1,0 +1,15 @@
+h1 {
+  background-color: aqua;
+  color: black;
+  padding: 10px;
+}
+
+h2 {
+  background-color: rgb(10, 139, 139);
+  color: black;
+  padding: 10px;
+}
+
+p {
+  padding: 5px;
+}
