@@ -2,3 +2,13 @@ h2 {
   color: red;
 }
 
+.title {
+  background: #000;
+  color: azure;
+  padding: 15px;
+}
+
+
+p {
+  padding: 5px;
+}
