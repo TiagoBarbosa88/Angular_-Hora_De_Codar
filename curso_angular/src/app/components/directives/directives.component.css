@@ -1,0 +1,33 @@
+body {
+  background-color: burlywood;
+}
+
+h2{
+  padding: 10px;
+}
+
+
+.small-title {
+  font-size: 14px;
+}
+
+.green-title {
+ color: darkgreen;
+}
+
+.underline-title {
+  text-decoration: underline;
+
+}
+
+.italic-title {
+  font-style: italic;
+}
+
+.purple-title {
+  color: purple;
+}
+
+.large-title {
+  font-size: 50px;
+}
