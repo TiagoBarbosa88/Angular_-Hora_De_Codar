@@ -1,0 +1,18 @@
+<div class="class">
+  <p *ngIf="show">Exibindo mensagem !</p>
+  <button (click)="showMessage()">Clique em mim</button>
+  <br>
+  <br>
+
+<div>
+<button (click)="handleClick()">
+  Toque aqui para exibir e ocultar o nome da empresa
+</button>
+</div>
+<br>
+<div *ngIf="toDisplay" class="data">
+  <div class="centered">
+    {{name}}
+  </div>
+</div>
+</div>
