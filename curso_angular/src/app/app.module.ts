@@ -9,7 +9,6 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +17,7 @@ import { EventosComponent } from './components/eventos/eventos.component';
     DirectivesComponent,
     IfRenderComponent,
     EventosComponent,
-    
+  
   ],
   imports: [
     BrowserModule,
