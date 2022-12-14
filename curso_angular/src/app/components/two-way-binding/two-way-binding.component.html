@@ -1,0 +1,21 @@
+<div class="class">
+  <h2>Aula - Two Way Binding</h2>
+  <form>
+    <input type="text" [(ngModel)]="name" name="name" placeholder="Digite seu nome">
+    <input type="submit" value="Enviar"><br><br>
+
+    <div *ngIf="name !== ''">
+      <p>O nome é: {{ name }} </p>
+    </div>
+    <br><br>
+
+    <input type="text" [(ngModel)]="job" name="job" placeholder="Qual seu trabalho ?">
+    <input type="submit" value="Enviar"><br><br>
+
+    <div *ngIf="job !== '' ">
+      <p>Seu trabalho é: {{ job }} </p>
+    </div>
+  </form>
+
+
+</div>

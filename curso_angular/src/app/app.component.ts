@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  userName = "Joaquim";
+  name = "Joaquim";
   userHelp = 'Tiago';
 
   userData = {
