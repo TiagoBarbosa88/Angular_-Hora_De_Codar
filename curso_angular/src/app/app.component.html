@@ -1,16 +1,12 @@
 <h1>Hello world Angular</h1>
-<h2>Testando h2</h2>
-<app-first-component></app-first-component>
-<div>
-  <a href="">  Veja mais aqui</a>
-</div>
-<app-parent-data [name]="name" [userData]="userData" [userHelp]="userHelp" [userHelpData]="userHelpData" ></app-parent-data>
-<app-directives></app-directives>
-<app-if-render></app-if-render>
-<app-eventos></app-eventos>
-<app-emiter></app-emiter>
-<app-list-render></app-list-render>
-<app-pipes></app-pipes>
-<app-two-way-binding></app-two-way-binding>
+<p>Header</p>
+<nav>
+  <a routerLink="/">Home</a>
+  <a routerLink="/list">List</a>
+  <a routerLink="/eventos">Eventos</a>
+</nav>
+<router-outlet></router-outlet>
+<p>Footer</p>
+
 
 
