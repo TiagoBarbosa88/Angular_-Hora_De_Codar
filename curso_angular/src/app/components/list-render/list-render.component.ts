@@ -9,26 +9,18 @@ import { Animal, Carro } from 'src/app/Animal';
   styleUrls: ['./list-render.component.scss']
 })
 export class ListRenderComponent implements OnInit {
-  animals: Animal [] = [
-    { name: "Turca", type: "Dog", age: 4 },
-    { name: "Tom", type: "Cat", age: 10 },
-    { name: "Frida", type: "Dog", age: 5 },
-    { name: "Bob", type: "Horse", age: 2 },
-  ]
+  animals: Animal[] = [];
 
   animalDetails = '';
 
-  carros: Carro[] = [
-    { marca: 'Gol', age: 2010, details: 'Completo' },
-    { marca: 'Polo', age: 2012, details: 'Sem Dh' },
-    { marca: 'Savero', age: 2017, details: 'Sem AR' },
-    { marca: 'Palio', age: 2009, details: 'Básico' },
-    { marca: 'Hb20', age: 2020, details: 'Completo' },
-  ]
+  carros: Carro[] = [];
 
   carroDetails = '';
 
-  constructor(private listService: ListService) { }
+  constructor(private listService: ListService) {
+    this.getAnimals();
+    this.getCarros();
+  }
 
   ngOnInit(): void {
   }
@@ -47,4 +39,13 @@ export class ListRenderComponent implements OnInit {
     this.animals = this.listService.remove(this.animals, animal)
 
   }
+
+  getAnimals():void {
+    this.listService.getAll().subscribe((animals) =>(this.animals = animals));
+  }
+
+  getCarros():void{
+    this.listService.getAllCarros().subscribe((carros) => (this.carros = carros))
+  }
+
 }
