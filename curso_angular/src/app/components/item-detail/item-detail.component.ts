@@ -19,9 +19,9 @@ export class ItemDetailComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getAnimal(){
-    const id = Number(this.route.snapshot.paramMap.get("id"))
-    this.listService.getItem(id).subscribe((animal) => (this.animal = animal))
+  getAnimal(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.listService.getItem(id).subscribe((animal) => (this.animal = animal));
   }
-
 }
+
