@@ -10,10 +10,10 @@ import { Animal } from 'src/app/Animal';
   styleUrls: ['./item-detail.component.scss']
 })
 export class ItemDetailComponent implements OnInit {
-  animal?:  Animal;
+  animal?: Animal;
 
   constructor(private listService: ListService, private route: ActivatedRoute) {
-    this.getAnimal()
+    this.getAnimal();
   }
 
   ngOnInit(): void {
