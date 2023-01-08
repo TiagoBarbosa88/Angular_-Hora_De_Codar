@@ -36,8 +36,8 @@ import { EditMomentComponent } from './components/pages/edit-moment/edit-moment.
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
